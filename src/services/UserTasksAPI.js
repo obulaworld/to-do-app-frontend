@@ -8,13 +8,13 @@ class UserTasksAPI {
     return axios.post(`${baseUrl}/tasks`, taskData);
   }
   static fetchAllUserTasks(userId) {
-    return axios.get(`${baseUrl}/tasks/userId`);
+    return axios.get(`${baseUrl}/tasks/${userId}`);
   }
   static updateTask(taskData, taskId) {
     return axios.put(`${baseUrl}/tasks/${taskId}`, taskData);
   }
 
-  static deleteUser(taskId) {
+  static deleteTask(taskId) {
     return axios.delete(`${baseUrl}/tasks/${taskId}`);
   }
 }
