@@ -1,11 +1,13 @@
 html,
 body {
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
   padding: 5%;
 }
 
-.field>.input>input {
-  background-color: aliceblue !important;
+.ui.form .error.message,
+.ui.form .success.message,
+.ui.form .warning.message {
+  display: block;
 }
 
 .ui.grid,
@@ -21,7 +23,6 @@ body {
 }
 
 .ui.fluid.button {
-  background-color: deepskyblue;
   border-radius: 50px;
 }
 
