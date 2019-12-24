@@ -25,6 +25,11 @@ body {
   border-radius: 50px;
 }
 
+.ui.fluid.button,
+.ui.fluid.buttons {
+  width: inherit;
+}
+
 .center {
   margin: auto;
   width: 35%;

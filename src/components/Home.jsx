@@ -1,6 +1,7 @@
 import React from "react";
 import { Message, Button, Container, Form } from "semantic-ui-react";
 import "semantic-ui-css/semantic.min.css";
+import history from "../history";
 import "../App.css";
 
 const list = [
@@ -13,6 +14,10 @@ const list = [
   "delete tasks.."
 ];
 
+const redirect = () => {
+  history.push("/users");
+};
+
 const Home = () => (
   <React.Fragment>
     <Container>
@@ -24,6 +29,7 @@ const Home = () => (
         fluid
         control={Button}
         content="Continue"
+        onClick={redirect}
       />
     </Container>
   </React.Fragment>

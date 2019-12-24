@@ -7,6 +7,7 @@ import history from "../history";
 
 // components
 import Home from "../components/Home";
+import ListUsers from "../components/Users";
 
 /**
  * @desc handles routing
@@ -16,6 +17,7 @@ const Routes = () => (
   <Router history={history}>
     <Switch>
       <Route exact path="/" component={Home} />
+      <Route exact path="/users" component={ListUsers} />
       <Route component={Home} />
     </Switch>
   </Router>
